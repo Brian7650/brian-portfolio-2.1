@@ -1,0 +1,713 @@
+/*============= RESET STYLE =============
+FONTS:
+Body: font-family: 'Roboto', sans-serif;
+Nav: font-family: 'Pacifico', cursive;
+*/
+
+/*-- iPhone X Remove Gutters
+Ignore W3C Validation error for this style. --*/
+html {
+  padding: env(safe-area-inset);
+  scroll-behavior: auto!important; /*-- Disable Bootstrap 5 Scroll Behavior to control speed in plugins.js --*/
+}
+
+/*-- Body Resets --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  background-color: #33425B;
+}
+
+.text-justify { /*-- Class Dropped in Bootstrap 5 --*/
+  text-align: justify;
+}
+
+/*-- Exprience Area Background---Main Wrapper --*/
+
+.experience-title-underline {
+  color: #ffffff;
+}
+.main-wrapper {
+  background-color: #D8E9F0;
+  color: #33425B;
+}
+
+.experience-bg  {
+  background-color: #33425B;
+  color: #FFFFFF;
+}
+
+/*-- Option: Add Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/* Eduvation Area */
+.education-container {
+  background-color: #D8E9F0;
+  color:#33425B;
+}
+
+/*-- Remove Blue Browser Outline Around Buttons in Chrome --*/
+a:focus,
+button:focus {
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+/*-- Pointer Cursor On Links & Buttons --*/
+a, .btn, button {
+  cursor: pointer!important;
+  transition: all 0.5s ease 0s;
+  text-decoration: none;
+}
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+  height: 4.36rem;
+  margin-top: -4.36rem;
+  content: "";
+  display: block;
+}
+
+/*=============BACKGROUND COLOUR FOR BANNER IN HOME AREA =============*/
+
+.bg-resume {
+  background-color: #33425B;
+}
+.text-aqua {
+  color: #FFFFFF;
+}
+.text-red {
+  color: #f05454;
+}
+/*-- BUTTONS FOR HOME AREA --*/
+.btn-lg {
+  border-width: thin;
+  border-radius: 0;
+  padding: .8rem 1.2rem;
+  font-size: .9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 1rem;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .1);
+}
+.btn-red {
+  border-color: #f05454; /*-- ba3c4b EF8588 --*/
+  background-color: #f05454;
+  color: white;
+}
+.btn-red:hover,
+.btn-red:focus {
+  border-color: #FFFFFF!important;
+  background-color: rgb(22, 2, 2);
+  color: #FFFFFF;
+}
+.btn-red:hover,
+.btn-red:focus {
+  border-color: white;
+  background-color: white;
+  color: #33425B;
+}
+/*-- BANNER FRAME FOR MAIN PROFILE PICTURE --*/
+.banner-img {
+  max-height: 14rem!important;
+  border-radius: 50%!important;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .1);
+}
+img {
+  max-width: 100%;
+}
+
+/*============= NAVIGATIONS COLOUR & SIZE =============*/
+
+.navbar {
+  background: #33425B;
+  padding: .9rem .5rem;
+}
+.cursive {
+  font-family: 'Pacifico', cursive;
+}
+.svg-inline--fa.fa-bars {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+}
+.navbar-nav .nav-link {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #f05454!important;
+}
+@media (min-width: 992px) {
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.navbar-toggler {
+  border: none!important;
+}
+
+/*============= ABOUT ME AREA =============*/
+
+.title-underline {
+  margin: 1rem auto 1.5rem;
+  width: 5rem;
+  height: .2rem;
+  background-color: #33425B;
+}
+.about .svg-inline--fa {
+  color: #29252c;
+  font-size: 1.15rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+.about p {
+  font-size: .95rem;
+}
+.about span {
+  color: #616971;
+  text-transform: none;
+}
+.about span a {
+  color: #616971;
+  text-decoration: none;
+}
+
+/*-- About Progress Bar --*/
+.progressbar-start p {
+  margin: 0;
+  padding: 0;
+}
+.percentCount {
+  margin-top: -2.4rem!important;
+}
+.progressbar {
+  margin-bottom: 1rem!important;
+}
+
+/*===== PARALLAX BACKGROUND IMAGES =====*/
+
+/*--- Parallax Background Images Color --*/
+.fixed-overlay {
+  background-color: rgba(0, 0, 0, .15);
+  z-index: 1000!important;
+}
+.bg-clear {
+  background-color: rgba(255, 255, 255, .6);
+}
+
+/*-- Circle Progress --*/
+.circle {
+  margin: 1rem auto;
+}
+.circle canvas {
+  background-color: #33425B;
+  border-radius: 50%;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .15);
+}
+.circle strong {
+  font-size: 2.2rem;
+  color: white;
+  margin: auto;
+  position: absolute;
+  top: 2rem; left: 0; bottom: 0; right: 0;
+  padding-left: .5rem;
+  z-index: 1;
+  max-height: 480px;
+}
+.circle strong i {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.techSkillsText {
+  font-size:20px;
+}
+
+/*============= PORTFOLIO GALLERY FILTER / LIGHTBOX =============*/
+/* project under */
+.title-underline-projects {
+  margin: 1rem auto 1.5rem;
+  width: 5rem;
+  height: .2rem;
+  background-color: #ffffff;
+}
+
+/*-- PROJECTS GALLERY MENU--*/
+.gallery {
+  width: 100%!important;
+}
+.navbar.projects {
+  min-height: .09rem;
+  letter-spacing: .07rem;
+}
+.filter ul li {
+  padding: .7rem;
+}
+.filter ul li.filter-active a.nav-link.filter,
+a.filter.is-checked,
+li a.nav-link.filter.active,
+li a.nav-link.filter:hover {
+  background-color: #f05454!important;
+  color: #ffffff!important;
+  cursor: pointer!important;
+}
+a.nav-link.filter {
+  padding-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/*-- Project Gallery Layout & CARD BODY--*/
+.element-item {
+  position: relative;
+  float: left;
+  width: 33%;
+  min-height: 14rem;
+  padding: .9rem;
+}
+.element-item img {
+  width: 100%;
+  margin-bottom: .1rem!important;
+  height: auto;
+  display:block;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .2);
+}
+.element-item a img:hover {
+  opacity: .4!important;
+  transition: all 1.3s ease 0s;
+  
+}
+
+.faceapp-view {
+  position: absolute;
+  bottom: 35px;
+  left: 35px;
+  font-size: 1em;
+  color: #f05454;
+}
+
+.faceapp-front {
+  position: absolute;
+  bottom:35px;
+  right: 120px;
+  font-size: 1em;
+  color: #f05454;
+}
+
+.faceapp-back {
+  position: absolute;
+  bottom:35px;
+  right: 35px;
+  font-size: 1em;
+  color: #f05454;
+}
+
+.faceapp-website {
+  position: absolute;
+  top:30px;
+  left: 35px;
+  font-size: 1em;
+  color: #f05454;
+}
+
+/* //////////////////////Card Body/////////////////////////////////// */
+
+.card-body {
+  text-align: center;
+  /* background-color: #D8E9F0; */
+}
+
+
+/*============= FOOTER =============*/
+
+footer {
+  background-color: #33425B;
+}
+footer .cursive {
+  margin-bottom: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #a8b4b9;
+}
+ul.social {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.social li {
+  display: inline;
+  padding-right: .6rem;
+}
+footer .social a:hover {
+  color: #a8b4b9;
+  text-decoration: none;
+}
+footer .svg-inline--fa {
+  font-size: 1.7rem;
+  margin: 1rem .4rem 0 0;
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+footer svg.svg-inline--fa:hover {
+  color: #a8b4b9!important;
+}
+
+/*============= SOCKET =============*/
+
+.socket {
+  background-color: #33425B;
+}
+.socket a {
+  color: white;
+}
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1200px (xl) */
+@media (max-width: 1199.98px) {
+  .element-item {
+    min-height: 12rem;
+  }
+}
+
+/* Devices under 992px (lg) */
+@media (max-width: 991.98px) {
+  .btn-lg {
+    padding: .6rem .8rem!important;
+    font-size: .9rem;
+    margin: .4rem!important;
+  }
+  .navbar {
+    padding: .4rem 1rem;
+  }
+  /*--- Nav Scrolling Offset --*/
+  .offset:before {
+    height: 3.95rem;
+    margin-top: -3.95rem;
+  }
+  .hidden-circle-lg {
+    display: none;
+  }
+  .element-item {
+    width: 50%;
+    min-height: 12.6rem;
+  }
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+  .navbar.projects .navbar-toggler {
+    width: 100%;
+  }
+  .navbar.projects .custom-toggler-icon {
+    float: left;
+    padding-right: 2rem;
+  }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.7rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.3rem; }
+  h5 { font-size: 1.2rem; }
+  h6 { font-size: 1.1rem; }
+  p { 
+    font-size: 1.7rem;
+    color: #33425B; 
+  }
+
+  /* Text media queries */
+
+  @media (max-width: 767.98px) {
+    
+      p { 
+        font-size: 1rem;
+        color:#ffffff;
+    }
+  }
+  /*--- Nav Scrolling Offset --*/
+  .offset:before {
+    height: 3.5rem;
+    margin-top: -3.5rem;
+  }
+  .btn-lg {
+    padding: .5rem .7rem!important;
+    font-size: .9rem;
+    margin: .4rem!important;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-img {
+    max-height: 18rem!important;
+  }
+  .history-circle {
+    margin-bottom: -1rem!important;
+    z-index: 9999!important;
+  }
+  .hidden-circle-md {
+    display: none;
+  }
+  .element-item {
+    width: 100%;
+    min-height: 14rem;
+  }
+  #references-carousel .owl-carousel .owl-nav button.owl-prev {
+    left: -1rem!important;
+  }
+  #references-carousel .owl-carousel .owl-nav button.owl-next {
+    right: -1rem!important;
+  }
+  .top-scroll {
+    display: none!important;
+  }
+}
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*============= WAYPOINTS =============*/
+
+/*-- OPTION: TURN OFF ANIMATION OFF COMPLETELY::
+Note: may effect line progress bar with slight delay,
+line-progressbar waypoints can be adjusted at bottom of plugins.js.--*/
+
+
+/* remove this CSS comment to activate
+
+.animated, .os-animation {
+  -webkit-animation: none!important;
+  -moz-animation: none!important;
+  -o-animation: none!important;
+  animation: none!important;
+  opacity: 1!important;
+  -webkit-animation-delay: none !important;
+  -moz-animation-delay: none !important;
+  animation-delay: none !important;
+  } */
+
+
+
+/*-- OPTION: TURN OFF ANIMATION ON MOBILE::
+Note: may effect line progress bar with slight delay,
+line-progressbar waypoints can be adjusted at bottom of plugins.js.--*/
+
+
+/* remove this CSS comment to activate
+
+@media (max-width: 767px) {
+	.animated, .os-animation {
+	  -webkit-animation: none!important;
+	  -moz-animation: none!important;
+	  -o-animation: none!important;
+	  animation: none!important;
+	  opacity: 1!important;
+	  -webkit-animation-delay: none !important;
+	  -moz-animation-delay: none !important;
+	  animation-delay: none !important;
+	  }
+	}
+
+*/
+
+
+/*--- Prevent WayPoints from Browser Window Scrolling On Mobile --*/
+/* Devices under 768px (md) */
+@media (max-width: 767px) {
+  .row {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
+/*-- Don't modify waypoints CSS below,
+this is required for waypoints/animation to work --*/
+.os-animation{
+  opacity: 0;
+  margin: 0!important;
+  max-width: 100%;
+}
+.os-animation.animated {
+  opacity: 1;
+}
+
+
+/*--- Fix for Potential Navbar Jumping During Scroll --*/
+.fixed-top  {
+  -webkit-backface-visibility: hidden; /*-- Ignore Validation --*/
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+}
+
+/*============= UNIVERSAL PARALLAX PLUGIN CSS =============*/
+.parallax-container {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 15px;
+  position: relative;
+  width: 100%
+}
+.parallax-container .parallax-content {
+  margin: 0 auto;
+  width: 100%;
+}
+.parallax__container {
+  clip: rect(0, auto, auto, 0);
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -100
+}
+.parallax__container .parallax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100%
+}
+
+/* ABOUT ME AREA */
+h6 {
+  color: #f05454;
+}
+
+.mb-2, .mb-4, .blue_font, .text-aqua{
+  color: #33425B;
+  font-weight: bold;
+}
+
+/******* LOGO OF BRANDS KNOWN *********/
+#logo-carousel,
+.contact-info,
+.carousel-wrap {
+  background-color: #33425B;
+}
+
+.item-logo {
+  width: 100%;
+  height: auto;
+}
+
+/* CONTACT AREA */
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #33425B;
+}
+#contact:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.1rem;
+  color:#FFFFFF;
+  background-color: #33425B;
+}
+
+.bi:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.bi {
+  color:#ffffff;
+  background-color: #33425B;
+  fill: currentColor;
+  padding: 0px 2px;
+  align-items: center;
+}
+
+.flow-right,
+.flow-left,
+.namefl
+h2, h3 {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.float-md-start {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.socket {
+  display: flex;
+  justify-content: center;
+}
+
+.lead {
+  size: 200px;
+}
+
+/* Custom styles for Logo Brands .owl-item */
+.item-logo {
+  /* Add your custom styles here */
+  height: 210px;
+  width: 160px;
+  /* Other style properties */
+}
